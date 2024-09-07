@@ -1,0 +1,87 @@
+.postForm {
+  background-color: var(--color-background-dim); // Background for the form
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  box-shadow: var(--shadow-card); // Add shadow for depth
+}
+.titleInput {
+  background-color: var(--color-background); // Input background
+  color: var(--color-text); // Text color
+  border: 1px solid var(--color-border); // Border color
+  border-radius: 4px;
+  padding: 0.75rem;
+  font-size: 1rem;
+
+  &:focus {
+    outline: none;
+    border: 1px solid var(--color-primary-shade); // Primary shade border on focus
+  }
+
+  &::placeholder {
+    color: var(--color-text-dim); // Dim text for placeholder
+  }
+}
+
+.postInput {
+  background-color: var(--color-background); // Input background
+  color: var(--color-text); // Text color
+  border: 1px solid var(--color-border); // Border color
+  border-radius: 4px;
+  resize: none;
+  min-height: 100px;
+  padding: 0.75rem;
+  font-size: 1rem;
+
+  &:focus {
+    outline: none;
+    border: 1px solid var(--color-primary-shade); // Primary shade border on focus
+  }
+
+  &::placeholder {
+    color: var(--color-text-dim); // Dim text for placeholder
+  }
+}
+
+.charCount {
+  color: var(--color-text-dim);
+  font-size: 0.8rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.errors {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+
+  p {
+    flex: 1 1 100%;
+  }
+}
+
+.postButton {
+  background-color: var(--color-primary); // Primary color for the button
+  color: var(--color-light); // Light color for button text
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-primary-shade); // Darker shade on hover
+  }
+
+  &:active {
+    background-color: var(--color-secondary); // Secondary color on active state
+  }
+}

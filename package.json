@@ -1,0 +1,44 @@
+{
+  "name": "simple-blog",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@prisma/client": "^5.17.0",
+    "@simplewebauthn/browser": "^9.0.1",
+    "@simplewebauthn/server": "^9.0.3",
+    "@tanstack/react-query": "^5.52.2",
+    "@types/uuid": "^10.0.0",
+    "bcrypt": "^5.1.1",
+    "classnames": "^2.5.1",
+    "date-fns": "^3.6.0",
+    "jsonwebtoken": "^9.0.2",
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^5.3.0",
+    "sass": "^1.77.8",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@tanstack/eslint-plugin-query": "^5.52.0",
+    "@tanstack/react-query-devtools": "^5.52.2",
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.5",
+    "prisma": "^5.17.0",
+    "typescript": "^5.5.4"
+  }
+}

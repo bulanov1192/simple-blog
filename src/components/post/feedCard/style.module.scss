@@ -1,0 +1,85 @@
+.postCard {
+  background-color: var(--color-background-dim); // Background for the post card
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-card); // Add shadow for depth
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: var(--color-text-dim); // Title color
+  font-size: 0.8rem;
+}
+
+.content {
+  color: var(--color-text); // Content color
+  font-size: 0.9rem;
+  margin: 0.4rem 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-size: 0.875rem;
+  color: var(--color-text-dim); // Footer text color
+}
+
+.author {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+
+  a {
+    font-size: 0.8rem;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline; // Underline on hover
+    }
+  }
+}
+
+.createdAt {
+  color: var(--color-text-dim); // Date color
+  font-size: 0.8rem;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+}
+
+.likeButton {
+  background-color: transparent; // Transparent background
+  border: none;
+  color: var(--color-text-dim); // Primary color for the like button
+  cursor: pointer;
+  padding-right: 0.5rem;
+  font-size: 1.1rem;
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+
+  span {
+    font-size: 1rem;
+  }
+
+  svg {
+    margin-bottom: 2px;
+  }
+
+  &:hover {
+    color: var(--color-primary-shade); // Darker shade on hover
+  }
+}
+
+.like {
+  .likeButton {
+    color: var(--color-primary);
+  }
+}

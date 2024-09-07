@@ -1,0 +1,15 @@
+.MainLayout {
+  width: 100%;
+  padding: 10px;
+  position: relative;
+}
+
+.MainFeedWrapper {
+  width: 100%;
+  max-width: min(80vw, 900px);
+  margin: 0 auto;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
