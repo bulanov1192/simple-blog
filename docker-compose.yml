@@ -9,6 +9,7 @@ services:
       PORT: "${APP_PORT}"
     depends_on:
       - db
+    mem_limit: 512m
     command:
       [
         "./wait-for-it.sh",
